@@ -1,12 +1,12 @@
-header.home {
+.home {
     width: 100%;
     background-image: url("../img/city.png");
     min-height: 100vh;
     background-position-x: center;
     background-position-y: bottom;
 
-    .home__nav {
-        .nav__list {
+    &__guide {
+        &__list {
             position: fixed;
             display: flex;
             flex-direction: row;
@@ -15,17 +15,169 @@ header.home {
             width: 100%;
             padding: 20px 0;
 
-            .list__anchor {
+            &__anchor {
                 margin-left: 25px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 1.2rem;
+                background: none;
+
+                &.home{
+                    position: relative;
+                    color: #0a54df;
+                    text-decoration: none;
+
+                    &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: aqua;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;                 
+                  }
+                  
+                    &:hover{
+                        color: #d40f9b;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }                  
+                }
+
+                &.my-services{
+                    position: relative;
+                    color: #0a54df;
+                    text-decoration: none;
+
+                    &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: aqua;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;                 
+                  }
+                  
+                    &:hover{
+                        color: #d40f9b;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }                  
+                }
+
+                &.skills{
+                    position: relative;
+                    color: #0a54df;
+                    text-decoration: none;
+
+                    &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: aqua;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;                 
+                  }
+                  
+                    &:hover{
+                        color: #d40f9b;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }                  
+                }
+
+                &.experiences{
+                    position: relative;
+                    color: #0a54df;
+                    text-decoration: none;
+
+                    &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: aqua;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;                 
+                  }
+                  
+                    &:hover{
+                        color: #d40f9b;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }                  
+                }
+
+                &.contact{
+                    position: relative;
+                    color: #0a54df;
+                    text-decoration: none;
+
+                    &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: aqua;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;                 
+                  }
+                  
+                    &:hover{
+                        color: #d40f9b;
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }                  
+                }
             }
+
         }
     }
 
-    .title-typewriter {
+    &__typewriter {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -33,11 +185,11 @@ header.home {
         color: white;
         min-height: 90vh;
 
-        .typewriter-name {
+        &__name {
             font-size: 2rem;
             font-family: monospace;
             margin-bottom: 20px;
-            color: rgb(10, 84, 223);
+            color: #0a54df;
 
             /*&::after{
                 content: "|";
@@ -57,7 +209,7 @@ header.home {
             }*/
         }
 
-        .typewriter-function {
+        &__function {
             font-size: 1.2rem;
             font-family: monospace;
             color: #d40f9b;

@@ -10,7 +10,7 @@ function typewriterName(element){
     });
 }
 
-typewriterName(document.querySelector('h1.typewriter-name'))
+typewriterName(document.querySelector('.home__typewriter__name'))
 
 //  <----- TypeWriter About Me ----->
 
