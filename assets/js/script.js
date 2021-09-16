@@ -78,3 +78,10 @@ function init(){
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait)
 }
+
+//  <----- Header Navigation Scroll ----->
+
+window.addEventListener("scroll", function(){
+    var navigation = document.querySelector(".home__guide__list");
+    navigation.classList.toggle("scroll", window.scrollY > 0);
+})
