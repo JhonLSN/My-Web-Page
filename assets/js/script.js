@@ -94,16 +94,11 @@ $('.home__guide .home__guide__list__anchor').click(function(e){
     var id = $(this).attr('href');
         // Return value top
         targetOffset = $(id).offset().top;
-        // Height of menu 
-        // menuHeight = $('.home__guide').innerHeight();
         // Verify value of top in console
         console.log(targetOffset);
-        // Verify value of menu
-        console.log(menuHeight);
     // Where do i want animation? 'html' and 'body'
     $('html, body').animate({
         // Who do i want to animate? 'top'
         scrollTop: targetOffset
-        // scrollTop: targetOffset - menuHeight 
     }, 500);
 });
