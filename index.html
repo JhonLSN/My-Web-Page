@@ -12,14 +12,14 @@
     <script src="https://kit.fontawesome.com/d5e65723a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="home">
+    <header class="home" id="home">
         <nav class="home__guide">
             <ul class="home__guide__list">
-                <li><a class="home__guide__list__anchor home" href="#">Home</a></li>
-                <li><a class="home__guide__list__anchor my-services" href="#">Meus Serviços</a></li>
-                <li><a class="home__guide__list__anchor skills" href="#">Habilidades</a></li>
-                <li><a class="home__guide__list__anchor experiences" id="" href="#">Experiência</a></li>
-                <li><a class="home__guide__list__anchor contact" href="#">Contato</a></li>
+                <li><a class="home__guide__list__anchor home" href="#home">Home</a></li>
+                <li><a class="home__guide__list__anchor my-services" href="#my-services">Meus Serviços</a></li>
+                <li><a class="home__guide__list__anchor skills" href="#skills">Habilidades</a></li>
+                <li><a class="home__guide__list__anchor experiences" id="#experiences" href="#">Experiência</a></li>
+                <li><a class="home__guide__list__anchor contact" href="#contact">Contato</a></li>
             </ul>
         </nav>
         <div class="home__typewriter">
@@ -29,7 +29,7 @@
             </h2>
         </div>
     </header>
-    <section class="services">
+    <section class="services" id="my-services">
         <h1 class="services__title">Meus Serviços</h1>
         <h2 class="services__title-help"> - Eu posso ajudar - </h2>
         <div class="services__box">
@@ -60,6 +60,8 @@
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 </html>

@@ -79,9 +79,31 @@ function init(){
     new TypeWriter(txtElement, words, wait)
 }
 
-//  <----- Header Navigation Scroll ----->
+//  <----- Header Size Scroll ----->
 
 window.addEventListener("scroll", function(){
     var navigation = document.querySelector(".home__guide__list");
     navigation.classList.toggle("scroll", window.scrollY > 0);
 })
+
+//  <----- Header Navigation Scroll (JQuery) ----->
+
+$('.home__guide .home__guide__list__anchor').click(function(e){
+    // Removing hashtag of link
+    e.preventDefault();
+    var id = $(this).attr('href');
+        // Return value top
+        targetOffset = $(id).offset().top;
+        // Height of menu 
+        // menuHeight = $('.home__guide').innerHeight();
+        // Verify value of top in console
+        console.log(targetOffset);
+        // Verify value of menu
+        console.log(menuHeight);
+    // Where do i want animation? 'html' and 'body'
+    $('html, body').animate({
+        // Who do i want to animate? 'top'
+        scrollTop: targetOffset
+        // scrollTop: targetOffset - menuHeight 
+    }, 500);
+});
