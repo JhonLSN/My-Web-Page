@@ -1,0 +1,162 @@
+.skill{
+    background-color: #2f2175;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Urbanist', sans-serif;
+    padding: 80px 50px;
+
+    &__title{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #00ffff;
+    }
+
+    &__title-techniques{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    &__bar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        color: white;
+        font-size: 2rem;           
+
+        & .skill__bar__column-one{
+            width: 100%; 
+            margin-right: 94px;           
+        }
+
+        & .skill__bar__column-two{
+            width: 100%;
+        }
+
+        & li {
+            margin: 20px 0;
+            list-style: none;  
+            
+            & .skill__bar__title{
+                color: #fff;
+                font-size: 1.4rem;
+                margin-bottom: 6px;
+            }
+
+            & .html{
+                width: 77%;
+                animation: html 5s;
+
+                @keyframes html {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 77%;
+                    }
+                }
+            }
+
+            & .css{
+                width: 65%;
+                animation: css 5s;
+
+                @keyframes css {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 65%;
+                    }
+                }
+            }
+            
+            & .sass{
+                width: 90%;
+                animation: sass 5s;
+
+                @keyframes sass {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 90%;
+                    }
+                }
+            }
+            
+            & .javascript{
+                width: 30%;
+                animation: javascript 5s;
+
+                @keyframes javascript {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 30%;
+                    }
+                }
+            }
+
+            & .git{
+                width: 69%;
+                animation: git 5s;
+
+                @keyframes git {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 69%;
+                    }
+                }
+            }
+
+            & .github{
+                width: 78%;
+                animation: github 5s;
+
+                @keyframes github {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 78%;
+                    }
+                }
+            }
+
+            & .linux{
+                width: 75%;
+                animation: linux 5s;
+
+                @keyframes linux {
+                    0%{
+                        width: 0%;
+                    }
+                    100%{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    
+        & .bar{
+            background: #000000;
+            display: block;
+            height: 4px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 5px #00ffffaf;
+    
+            & span{
+                height: 4px;
+                float: left;
+                background: #00ffff;
+            }
+        }
+    }
+}
