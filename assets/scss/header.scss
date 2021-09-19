@@ -5,6 +5,7 @@
     background-position-x: center;
     background-position-y: bottom;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 
     &::before{
         height: 100vh;
