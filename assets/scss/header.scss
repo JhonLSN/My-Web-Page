@@ -1,9 +1,19 @@
 .home {
     width: 100%;
-    background-image: url("../img/city.png");
+    background-image: url("../img/city.jpg");
     min-height: 100vh;
     background-position-x: center;
     background-position-y: bottom;
+    background-attachment: fixed;
+
+    &::before{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        background: #000000e0;
+        position: absolute;
+        content: '';
+    }
 
     &__guide {
         &__list {
@@ -189,14 +199,22 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        color: white;
-        min-height: 90vh;
+        min-height: 55vh;
 
         &__name {
             font-size: 2rem;
             font-family: monospace;
             margin-bottom: 20px;
-            color: #0a54df;
+            color: white;
+            z-index: 1;
+
+            &--change{
+                font-size: 2rem;
+                font-family: monospace;
+                margin-bottom: 20px;
+                color: #00ffff;
+                z-index: 1;
+            }
 
             /*&::after{
                 content: "|";
@@ -220,6 +238,7 @@
             font-size: 1.2rem;
             font-family: monospace;
             color: #d40f9b;
+            z-index: 1;
 
             /*Cursor*/
             & .txt-type > .txt {

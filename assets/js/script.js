@@ -1,4 +1,4 @@
-//  <----- TypeWriter Name ----->
+//  <----- TypeWriter Name and --change ----->
 
 function typewriterName(element){
     const textArrayName = element.innerHTML.split('');
@@ -11,6 +11,7 @@ function typewriterName(element){
 }
 
 typewriterName(document.querySelector('.home__typewriter__name'))
+typewriterName(document.querySelector('.home__typewriter__name--change'))
 
 //  <----- TypeWriter About Me ----->
 
