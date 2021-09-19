@@ -207,6 +207,7 @@
             margin-bottom: 20px;
             color: white;
             z-index: 1;
+            text-align: center;
 
             &--change{
                 font-size: 2rem;
@@ -214,6 +215,7 @@
                 margin-bottom: 20px;
                 color: #00ffff;
                 z-index: 1;
+                text-align: center;
             }
 
             /*&::after{
@@ -239,6 +241,7 @@
             font-family: monospace;
             color: #d40f9b;
             z-index: 1;
+            text-align: center;
 
             /*Cursor*/
             & .txt-type > .txt {

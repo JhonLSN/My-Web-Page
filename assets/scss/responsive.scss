@@ -1,0 +1,43 @@
+@media screen and (max-width: 700px){
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .services{
+        &__box{
+            display: flex;
+            flex-direction: column;
+
+            &__card{
+                width: 100%;
+            }
+        }
+    }
+
+    .skill{
+        padding: 80px 30px;
+
+        &__bar{
+            display: flex;
+            flex-direction: column;
+
+            &__column-one{
+                margin-right: 0;
+
+                & .--change{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .connection{
+        padding: 80px 30px;
+
+        &__title-aspect{
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    }
+}

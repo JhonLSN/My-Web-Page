@@ -11,12 +11,14 @@
         font-size: 2.5rem;
         margin-bottom: 10px;
         color: #00ffff;
+        text-align: center;
     }
 
     &__title-techniques{
         font-size: 1.5rem;
         margin-bottom: 50px;
         color: #fff;
+        text-align: center;
     }
 
     &__bar{
@@ -26,12 +28,12 @@
         color: white;
         font-size: 2rem;           
 
-        & .skill__bar__column-one{
+        &__column-one{
             width: 100%; 
             margin-right: 94px;           
         }
 
-        & .skill__bar__column-two{
+        &__column-two{
             width: 100%;
         }
 
