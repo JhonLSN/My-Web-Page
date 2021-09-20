@@ -18,6 +18,10 @@
             height: 100vh;
             background: #0000008c;
         }
+
+        &__guide{
+            display: none; // Disable Guide Of Navigation
+        }
     }
 
     .services {
